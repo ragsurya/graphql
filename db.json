@@ -1,0 +1,37 @@
+{
+  "products":[
+  {
+    "accountId": 123,
+    "productId": 1,
+    "accountEmail": "test@test.com",
+      "type": "car",
+      "details": {
+        "reg": "DL3TSD2",
+        "make": "ford",
+        "model": "focus"
+    }
+    
+    },
+    {
+      "accountId": 123,
+      "productId": 4,
+      "accountEmail": "test@test.com",
+        "type": "car",
+        "details": {
+          "reg": "DL3TSD2",
+          "make": "ford",
+          "model": "focus"
+      }
+    },
+      {
+      "accountId": 123,
+      "productId": 2,
+      "accountEmail": "test@test.com",
+      "type": "house",
+      "details": {
+        "number": "12",
+        "postcode": "LE35LR"
+      }
+    }
+  ]
+}
