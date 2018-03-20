@@ -8,5 +8,6 @@ app.use('/graphql', graphQLHttp({
     graphiql: true
 }))
 
-app.listen(4000);
-console.log('Listening...')
+app.listen(4000, () => {
+    console.log('Listening...');
+});

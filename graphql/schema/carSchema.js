@@ -24,7 +24,33 @@ const {
     GraphQLList
 } = require('graphql');
 
+const CarDetails = new GraphQLObjectType({
+    name: 'CarDetails',
+    description: 'product activity API schema for Car',
+    fields : () => ({
+        reg: {
+            type: GraphQLString
+        },
+        make: {
+            type: GraphQLString
+        },
+        model: {
+            type: GraphQLString
+        }
+    })
+})
 
+const CarItem = new GraphQLObjectType({
+    name: 'Car',
+    description: 'product activity API schema for Car',
+    fields : () => ({
+        
+        details : {
+            type: new GraphQLList(CarDetails)
+        }
+       
+    })
+})
 
 const carSchema = new GraphQLSchema({
     query: new GraphQLObjectType({
